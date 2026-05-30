@@ -125,7 +125,7 @@
 
     <div class="container">
         <div class="logo-box">
-            <img src="m11.jpeg" alt="Vijo Shop Logo">
+            <img src="m11.jpeg" alt="ViJo Shop">
         </div>
 
         <h1>Você está sendo redirecionado!</h1>
@@ -135,7 +135,7 @@
             <div class="spinner"></div>
         </div>
 
-        <a href="https://shopee.com.br" id="shopee-link" class="btn-shopee">
+        <a href="COLE_AQUI_O_LINK_DA_SUA_VITRINE_DA_SHOPEE" id="shopee-link" class="btn-shopee">
             Ir para a Shopee agora
         </a>
 
@@ -145,13 +145,16 @@
     </div>
 
     <script>
-        // Altere o link abaixo para a URL real da sua vitrine (Mantenha o https://)
-        const LINK_SHOPEE = "https://shopee.com.br";
+        // CONFIGURAÇÃO: Altere o link entre as aspas para o link da sua loja/vitrine
+        const LINK_SHOPEE = "https://collshp.com/vitoloff146?view=storefront";
         
+        // Tempo de espera em milissegundos (3000ms = 3 segundos)
         const TEMPO_ESPERA = 3000; 
 
+        // Atualiza o link do botão dinamicamente caso mude na variável acima
         document.getElementById('shopee-link').href = LINK_SHOPEE;
 
+        // Executa o redirecionamento automático após o tempo definido
         setTimeout(() => {
             window.location.href = LINK_SHOPEE;
         }, TEMPO_ESPERA);
