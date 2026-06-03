@@ -1,10 +1,25 @@
-<!DOCTYPE html>
+colar o codigo meta <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijo Shop - Redirecionando...</title>
-    <style>
+    <title>Vijo Shop - Redirecionando...</title> <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '918341774492381');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code --><style>
         /* RESET E CONFIGURAÇÕES DE CORES BASEADAS NA SUA LOGO */
         :root {
             --verde-vijo: #39A935;
@@ -135,7 +150,7 @@
             <div class="spinner"></div>
         </div>
 
-        <a href="COLE_AQUI_O_LINK_DA_SUA_VITRINE_DA_SHOPEE" id="shopee-link" class="btn-shopee">
+        <a href="https://collshp.com/vitoloff146?view=storefront" id="shopee-link" class="btn-shopee">
             Ir para a Shopee agora
         </a>
 
