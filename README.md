@@ -7,17 +7,14 @@ colar o codigo meta <!DOCTYPE html>
     <script>
   fbq('track', 'ViewContent');
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17997715261"></script>
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '918341774492381');
-fbq('track', 'PageView');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17997715261');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
@@ -112,7 +109,7 @@ src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
             display: inline-block;
             width: 100%;
             padding: 15px 20px;
-            background-color: #EE4D2D; /* Laranja Oficial da Shopee */
+            background-color: #EE4D2D; /* Laranja Oficial da Meli */
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -122,12 +119,12 @@ src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
             box-shadow: 0 4px 15px rgba(238, 77, 45, 0.3);
         }
 
-        .btn-shopee:hover {
+        .btn-Meli:hover {
             background-color: #d73f21;
             transform: translateY(-2px);
         }
 
-        .btn-shopee:active {
+        .btn-Meli:active {
             transform: translateY(0);
         }
 
@@ -147,13 +144,13 @@ src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
         </div>
 
         <h1>Você está sendo redirecionado!</h1>
-        <p>Aguarde alguns segundos enquanto abrimos a nossa vitrine oficial na Shopee...</p>
+        <p>Aguarde alguns segundos enquanto abrimos a nossa vitrine oficial no Meli...</p>
 
         <div class="loader-container">
             <div class="spinner"></div>
         </div>
 
-        <a href="https://collshp.com/vitoloff146?view=storefront" id="shopee-link" class="btn-shopee">
+        <a href="https:https://meli.la/2Jg4bmf id="Meli-link" class="btn-Meli">
             Ir para a Shopee agora
         </a>
 
@@ -164,17 +161,17 @@ src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
 
     <script>
         // CONFIGURAÇÃO: Altere o link entre as aspas para o link da sua loja/vitrine
-        const LINK_SHOPEE = "https://collshp.com/vitoloff146?view=storefront";
+        const LINK_Coleção = "https://meli.la/2Jg4bmf";
         
         // Tempo de espera em milissegundos (3000ms = 3 segundos)
         const TEMPO_ESPERA = 3000; 
 
         // Atualiza o link do botão dinamicamente caso mude na variável acima
-        document.getElementById('shopee-link').href = LINK_SHOPEE;
+        document.getElementById('Meli-link').href = LINK_MELI;
 
         // Executa o redirecionamento automático após o tempo definido
         setTimeout(() => {
-            window.location.href = LINK_SHOPEE;
+            window.location.href = LINK_MELI;
         }, TEMPO_ESPERA);
     </script>
 
