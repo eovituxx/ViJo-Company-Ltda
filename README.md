@@ -1,25 +1,30 @@
-colar o codigo meta <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijo Shop - Redirecionando...</title> <!-- Meta Pixel Code -->
+    <title>Vijo Shop - Redirecionando...</title> 
+    
+    <!-- Meta Pixel Code -->
     <script>
-  fbq('track', 'ViewContent');
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17997715261"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        fbq('track', 'ViewContent');
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17997715261"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'AW-17997715261');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code --><style>
+      gtag('config', 'AW-17997715261');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
         /* RESET E CONFIGURAÇÕES DE CORES BASEADAS NA SUA LOGO */
         :root {
             --verde-vijo: #39A935;
@@ -104,23 +109,23 @@ src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
             100% { transform: rotate(360deg); }
         }
 
-        /* BOTÃO DE REDIRECIONAMENTO DIRETO */
-        .btn-shopee {
+        /* BOTÃO DE REDIRECIONAMENTO DIRETO (MERCADO LIVRE) */
+        .btn-Meli {
             display: inline-block;
             width: 100%;
             padding: 15px 20px;
-            background-color: #EE4D2D; /* Laranja Oficial da Meli */
-            color: white;
+            background-color: #FFF159; /* Amarelo Oficial do Mercado Livre */
+            color: #333333; /* Texto escuro para contraste */
             text-decoration: none;
             font-weight: bold;
             font-size: 1rem;
             border-radius: 10px;
             transition: transform 0.2s, background-color 0.2s;
-            box-shadow: 0 4px 15px rgba(238, 77, 45, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .btn-Meli:hover {
-            background-color: #d73f21;
+            background-color: #e6d950;
             transform: translateY(-2px);
         }
 
@@ -144,14 +149,15 @@ src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
         </div>
 
         <h1>Você está sendo redirecionado!</h1>
-        <p>Aguarde alguns segundos enquanto abrimos a nossa vitrine oficial no Meli...</p>
+        <p>Aguarde alguns segundos enquanto abrimos a nossa vitrine oficial no Mercado Livre...</p>
 
         <div class="loader-container">
             <div class="spinner"></div>
         </div>
 
-        <a href="https:https://meli.la/2Jg4bmf id="Meli-link" class="btn-Meli">
-            Ir para a Shopee agora
+        <!-- Corrigido o erro de aspas e link duplicado na tag abaixo -->
+        <a href="https://meli.la/2Jg4bmf" id="Meli-link" class="btn-Meli">
+            Ir para o Mercado Livre agora
         </a>
 
         <div class="footer-text">
@@ -160,16 +166,16 @@ src="https://www.facebook.com/tr?id=918341774492381&ev=PageView&noscript=1"
     </div>
 
     <script>
-        // CONFIGURAÇÃO: Altere o link entre as aspas para o link da sua loja/vitrine
-        const LINK_Coleção = "https://meli.la/2Jg4bmf";
+        // CONFIGURAÇÃO: Link oficial para onde o usuário será enviado
+        const LINK_MELI = "https://meli.la/2Jg4bmf";
         
-        // Tempo de espera em milissegundos (3000ms = 3 segundos)
+        // Tempo de espera em milissegundos (3000ms = 3 segundos) para o Google Ads processar o clique
         const TEMPO_ESPERA = 3000; 
 
-        // Atualiza o link do botão dinamicamente caso mude na variável acima
+        // Atualiza o link do botão dinamicamente na página
         document.getElementById('Meli-link').href = LINK_MELI;
 
-        // Executa o redirecionamento automático após o tempo definido
+        // Executa o redirecionamento automático após os 3 segundos
         setTimeout(() => {
             window.location.href = LINK_MELI;
         }, TEMPO_ESPERA);
