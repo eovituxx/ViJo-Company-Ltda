@@ -103,3 +103,82 @@
             width: 50px;
             height: 50px;
             border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--verde-vijo);
+            border-right: 5px solid var(--azul-vijo);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* BOTÃO DE REDIRECIONAMENTO DIRETO (MERCADO LIVRE) */
+        .btn-Meli {
+            display: inline-block;
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #FFF159; /* Amarelo Oficial do Mercado Livre */
+            color: #333333; /* Texto escuro para contraste */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            border-radius: 10px;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-Meli:hover {
+            background-color: #e6d950;
+            transform: translateY(-2px);
+        }
+
+        .btn-Meli:active {
+            transform: translateY(0);
+        }
+
+        /* FOOTER DA PÁGINA */
+        .footer-text {
+            margin-top: 25px;
+            font-size: 0.75rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-box">
+            <img src="m11.jpeg" alt="ViJo Shop">
+        </div>
+
+        <h1>Você está sendo redirecionado!</h1>
+        <p>Aguarde um instante enquanto abrimos a nossa vitrine oficial no Mercado Livre...</p>
+
+        <div class="loader-container">
+            <div class="spinner"></div>
+        </div>
+
+        <a href="https://meli.la/2Jg4bmf" id="Meli-link" class="btn-Meli">
+            Ir para o Mercado Livre agora
+        </a>
+
+        <div class="footer-text">
+            Conexão segura garantida por Vijo Shop
+        </div>
+    </div>
+
+    <script>
+        // CONFIGURAÇÃO: Link oficial para onde o usuário será enviado
+        const LINK_MELI = "https://meli.la/2Jg4bmf";
+        
+        // Atualiza o link do botão dinamicamente na página
+        document.getElementById('Meli-link').href = LINK_MELI;
+
+        // Redirecionamento INSTANTÂNEO para conformidade com o Google Ads
+        window.location.replace(LINK_MELI);
+    </script>
+
+</body>
+</html>
